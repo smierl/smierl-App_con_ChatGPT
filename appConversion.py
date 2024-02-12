@@ -52,20 +52,96 @@ def main():
 
 def realizar_conversion(tipo_conversion, valor_original):
     # Lógica para realizar la conversión
-    # Puedes expandir esta función según sea necesario
     
-    # Ejemplo de conversión de temperatura: Celsius a Fahrenheit
+    # temperatura
     if tipo_conversion == "Celsius a Fahrenheit":
         resultado = (valor_original * 9/5) + 32
         return resultado
     
-    # Ejemplo de conversión de longitud: Pies a Metros
+    elif tipo_conversion == "Fahrenheit a Celsius":
+        resultado = (valor_original - 32) * 5/9
+        return resultado
+    
+    elif tipo_conversion == "Celsius a Kelvin":
+        resultado = valor_original + 273.15
+        return resultado
+    
+    elif tipo_conversion == "Kelvin a Celsius":
+        resultado = valor_original - 273.15
+        return resultado
+
+    # longitud
     elif tipo_conversion == "Pies a metros":
         resultado = valor_original * 0.3048
         return resultado
+    
+    elif tipo_conversion == "Metros a pies":
+        resultado = valor_original / 0.3048
+        return resultado
+    
+    elif tipo_conversion == "Pulgadas a centímetros":
+        resultado = valor_original * 2.54
+        return resultado
+    
+    elif tipo_conversion == "Centímetros a pulgadas":
+        resultado = valor_original / 2.54
+        return resultado
 
-    # Agrega más casos según sea necesario
+     #peso/masa
+     if tipo_conversion == "Libras a kilogramos":
+        resultado = valor_original * 0.453592
+        return resultado
+    
+    elif tipo_conversion == "Kilogramos a libras":
+        resultado = valor_original / 0.453592
+        return resultado
+    
+    elif tipo_conversion == "Onzas a gramos":
+        resultado = valor_original * 28.3495
+        return resultado
+    
+    elif tipo_conversion == "Gramos a onzas":
+        resultado = valor_original / 28.3495
+        return resultado
+
+    #volumen
+    if tipo_conversion == "Galones a litros":
+        resultado = valor_original * 3.78541
+        return resultado
+    
+    elif tipo_conversion == "Litros a galones":
+        resultado = valor_original / 3.78541
+        return resultado
+    
+    elif tipo_conversion == "Pulgadas cúbicas a centímetros cúbicos":
+        resultado = valor_original * 16.3871
+        return resultado
+    
+    elif tipo_conversion == "Centímetros cúbicos a pulgadas cúbicas":
+        resultado = valor_original / 16.3871
+        return resultado
+
+    #tiempo
+    if tipo_conversion == "Horas a minutos":
+        resultado = valor_original * 60
+        return resultado
+    
+    elif tipo_conversion == "Minutos a segundos":
+        resultado = valor_original * 60
+        return resultado
+    
+    elif tipo_conversion == "Días a horas":
+        resultado = valor_original * 24
+        return resultado
+    
+    elif tipo_conversion == "Semanas a días":
+        resultado = valor_original * 7
+        return resultado
+
+    
+    
 
 if __name__ == "__main__":
     main()
+
 
