@@ -42,6 +42,30 @@ def main():
 
     st.write(f"Has seleccionado: {seleccion_conversion_secundaria}")
 
+    # Entrada de datos
+    valor_original = st.number_input("Ingrese el valor a convertir:")
+    
+    # Botón para realizar la conversión
+    if st.button("Realizar Conversión"):
+        resultado = realizar_conversion(seleccion_conversion_secundaria, valor_original)
+        st.write(f"Resultado de la conversión: {resultado}")
+
+def realizar_conversion(tipo_conversion, valor_original):
+    # Lógica para realizar la conversión
+    # Puedes expandir esta función según sea necesario
+    
+    # Ejemplo de conversión de temperatura: Celsius a Fahrenheit
+    if tipo_conversion == "Celsius a Fahrenheit":
+        resultado = (valor_original * 9/5) + 32
+        return resultado
+    
+    # Ejemplo de conversión de longitud: Pies a Metros
+    elif tipo_conversion == "Pies a metros":
+        resultado = valor_original * 0.3048
+        return resultado
+
+    # Agrega más casos según sea necesario
+
 if __name__ == "__main__":
     main()
 
