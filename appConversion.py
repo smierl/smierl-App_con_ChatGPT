@@ -88,7 +88,7 @@ def realizar_conversion(tipo_conversion, valor_original):
         return resultado
 
      #peso/masa
-     if tipo_conversion == "Libras a kilogramos":
+    if tipo_conversion == "Libras a kilogramos":
         resultado = valor_original * 0.453592
         return resultado
     
